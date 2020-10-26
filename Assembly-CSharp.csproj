@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -658,6 +659,12 @@
     <Reference Include="Unity.CollabProxy.Editor">
         <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Elringus.SpriteGlow.Runtime">
+        <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Elringus.SpriteGlow.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -675,6 +682,9 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
         <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
         <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
@@ -702,15 +712,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-        <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-        <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Elringus.SpriteGlow.Runtime">
-        <HintPath>/Users/vlad/Desktop/projects/UnityProjects/sequencewargame/Library/ScriptAssemblies/Elringus.SpriteGlow.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
