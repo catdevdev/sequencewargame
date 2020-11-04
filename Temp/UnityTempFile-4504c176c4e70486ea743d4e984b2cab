@@ -311,7 +311,15 @@
 /define:UNITY_POST_PROCESSING_STACK_V2
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/BotController.cs"
+"Assets/Scripts/Bullet.cs"
+"Assets/Scripts/ConnectWithServer.cs"
+"Assets/Scripts/Controller.cs"
+"Assets/Scripts/Enemy.cs"
+"Assets/Scripts/JoystickController.cs"
+"Assets/Scripts/SpawnUsers.cs"
+"Assets/Scripts/TriangleController.cs"
+"Assets/Scripts/UserController.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
