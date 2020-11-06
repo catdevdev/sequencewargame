@@ -36,13 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Prefabs\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\BotController.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\ConnectWithServer.cs" />
      <Compile Include="Assets\Scripts\Controller.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\JoystickController.cs" />
-     <Compile Include="Assets\Scripts\SpawnUsers.cs" />
+     <Compile Include="Assets\Scripts\Schema\TriangleInfo.cs" />
+     <Compile Include="Assets\Scripts\Schema\UserInfo.cs" />
+     <Compile Include="Assets\Scripts\Spawn\EnemySpawn.cs" />
+     <Compile Include="Assets\Scripts\Spawn\SpawnArrow.cs" />
+     <Compile Include="Assets\Scripts\Spawn\UserSpawn.cs" />
      <Compile Include="Assets\Scripts\TriangleController.cs" />
      <Compile Include="Assets\Scripts\UserController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8742398451085038733}
   - component: {fileID: 6193227264632975304}
   - component: {fileID: -2451726140916421726}
+  - component: {fileID: -2301205700876159865}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -101,3 +102,21 @@ MonoBehaviour:
   whatIsSolid:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &-2301205700876159865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7834300457617155682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 1, g: 0, b: 0.7070708, a: 1}
+  glowBrightness: 1.2
+  outlineWidth: 5
+  alphaThreshold: 0.209
+  drawOutside: 0
+  enableInstancing: 0
