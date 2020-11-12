@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class EntityData
 {
+   public string type;
    public string id;
    public string entityName;
    public string nickName;

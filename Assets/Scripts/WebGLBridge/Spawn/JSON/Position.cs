@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Position
 {
-    public string x;
+    public float x;
 
-    public string y;
+    public float y;
 }
