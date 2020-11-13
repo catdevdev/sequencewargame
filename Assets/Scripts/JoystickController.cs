@@ -13,7 +13,7 @@ public class JoystickController : TriangleController
 
     private void Update()
     {
-        Call("{\"posX\":1,\"posY\":-1}");
+        // Call("{\"posX\":1,\"posY\":-1}");
 
         float hozizontal = executeJoystickCall.joystickInput.posX;
         float vertical = executeJoystickCall.joystickInput.posY;
