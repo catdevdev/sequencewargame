@@ -42,7 +42,7 @@ public class TriangleController : MonoBehaviour
         // limit speed
         if (rb.velocity.magnitude > maxSpeed)
             rb.velocity = rb.velocity.normalized * maxSpeed;
-    }   
+    }
 
     public void Fire()
     {
@@ -77,8 +77,5 @@ public class TriangleController : MonoBehaviour
     private void FixedUpdate()
     {
         instantiatedNicknameLabel.transform.position = transform.position;
-
-        a+=100;
-        rb.MoveRotation(Time.deltaTime + a);
     }
 }

@@ -17,21 +17,16 @@ public class JoystickController : TriangleController
         executeJoystickCall.Call (jsonData);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         // Call("{\"posX\":1,\"posY\":-1}");
         float hozizontal = executeJoystickCall.joystickInput.posX;
         float vertical = executeJoystickCall.joystickInput.posY;
 
         Move (hozizontal, vertical);
-    }
-
-    private void FixedUpdate()
-    {
-        // if (hozizontal != 0 || vertical != 0)
-        // {
-        Fire();
-
-        // }
+        if (hozizontal != 0 || vertical != 0)
+        {
+            Fire();
+        }
     }
 }

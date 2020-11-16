@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroEffect: {fileID: 6888092706073387985, guid: 4c618a841b1734394b1e910a892e795b,
     type: 3}
-  health: 3
+  health: 2
   team: 0
 --- !u!114 &1522842097899794262
 MonoBehaviour:
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d40b1ac010554080ab98a5b82731baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 2.5
+  maxSpeed: 2
   power: 2
   bullet: {fileID: 7834300457617155682, guid: b343a7dbdd399425ca03d8b2b204c421, type: 3}
   shotPoint: {fileID: 3234471996062514369}
@@ -203,12 +203,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bc7bcbc365e4ceeb2c2fb4288e76d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 2.5
-  power: 5
+  maxSpeed: 2
+  power: 2
   bullet: {fileID: 7834300457617155682, guid: b343a7dbdd399425ca03d8b2b204c421, type: 3}
   shotPoint: {fileID: 3234471996062514369}
-  timeBtwShots: 0.3
-  startTimeBtwShots: 0.3
+  timeBtwShots: 0.5
+  startTimeBtwShots: 0.5
   nicknameLabel: {fileID: 0}
   nickName: 
 --- !u!1 &3234471996062514374
