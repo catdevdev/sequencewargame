@@ -14,6 +14,8 @@ public class Bullet : MonoBehaviour
 
     public LayerMask whatIsSolid;
 
+    public int team = 0;
+
     private void Update()
     {
         RaycastHit2D hitInfo =
@@ -24,12 +26,20 @@ public class Bullet : MonoBehaviour
                 whatIsSolid);
         if (hitInfo.collider != null)
         {
-            if (hitInfo.collider.CompareTag("Enemy"))
+            if (
+                hitInfo.collider.CompareTag("Hit") &&
+                hitInfo.collider.GetComponent<ParametersJoystick>().team != team
+            )
             {
-                hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
+                hitInfo
+                    .collider
+                    .GetComponent<ParametersJoystick>()
+                    .TakeDamage(damage);
             }
             Destroy (gameObject);
         }
+
+        // Move
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 }

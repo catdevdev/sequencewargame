@@ -18,6 +18,6 @@ public class ExecuteJoystickCall : JoystickCall
 
     private void Start()
     {
-        Call("{\"posX\":\"10\",\"posY:\"\"15\"}");
+        // Call("{\"posX\":\"10\",\"posY:\"\"15\"}");
     }
 }

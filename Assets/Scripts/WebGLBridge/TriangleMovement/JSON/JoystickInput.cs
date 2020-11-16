@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class JoystickInput
 {
-    public float id;
+    public string id;
 
-    public float posX;
+    public float posX = 0f;
 
-    public float posY;
+    public float posY = 0f;
 }

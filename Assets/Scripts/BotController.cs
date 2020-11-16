@@ -10,5 +10,6 @@ public class BotController : TriangleController
         float vertical = Random.Range(0f, 2f) - 1f;
 
         Move (hozizontal, vertical);
+        Fire();
     }
 }

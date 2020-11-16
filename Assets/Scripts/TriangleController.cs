@@ -1,28 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TriangleController : MonoBehaviour
 {
     [SerializeField]
-    private float maxSpeed = 200f;
+    public float maxSpeed = 200f;
 
     [SerializeField]
-    private float power = 5f;
+    public float power = 5f;
 
     [SerializeField]
-    private GameObject bullet;
+    public GameObject bullet;
 
     [SerializeField]
     private Transform shotPoint;
 
     [SerializeField]
-    private float timeBtwShots;
+    public float timeBtwShots;
 
     [SerializeField]
     private float startTimeBtwShots;
 
     private Rigidbody2D rb;
+
+    [SerializeField]
+    GameObject nicknameLabel;
+
+    GameObject instantiatedNicknameLabel;
+
+    public string nickName = "123";
 
     public void Move(float horizontalInput, float verticalInput)
     {
@@ -34,26 +42,43 @@ public class TriangleController : MonoBehaviour
         // limit speed
         if (rb.velocity.magnitude > maxSpeed)
             rb.velocity = rb.velocity.normalized * maxSpeed;
-    }
+    }   
 
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void FixedUpdate()
+    public void Fire()
     {
         if (timeBtwShots <= 0)
         {
-            if (Input.GetMouseButton(0))
-            {
-                Instantiate(bullet, shotPoint.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
-            }
+            // bullet.GetComponent<Bullet>().team;
+            Instantiate(bullet, shotPoint.position, transform.rotation);
+            timeBtwShots = startTimeBtwShots;
         }
         else
         {
             timeBtwShots -= Time.deltaTime;
         }
+    }
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        instantiatedNicknameLabel =
+            Instantiate(nicknameLabel,
+            transform.position,
+            Quaternion.Euler(new Vector3(0, 0, 0)));
+
+        GameObject label =
+            instantiatedNicknameLabel.transform.Find("Text").gameObject;
+        TextMeshProUGUI t = label.GetComponent<TextMeshProUGUI>();
+        t.text = nickName;
+    }
+
+    int a = 100;
+
+    private void FixedUpdate()
+    {
+        instantiatedNicknameLabel.transform.position = transform.position;
+
+        a+=100;
+        rb.MoveRotation(Time.deltaTime + a);
     }
 }

@@ -10,14 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 5764143680789025823}
   - component: {fileID: 5764143680789025822}
-  - component: {fileID: 5764143680789025817}
-  - component: {fileID: 5764143680789025816}
   - component: {fileID: 2705497171335970275}
   - component: {fileID: 8520605805661655474}
-  - component: {fileID: -8386852226148938436}
-  m_Layer: 8
+  - component: {fileID: 5764143680789025817}
+  - component: {fileID: 6444432432118438809}
+  - component: {fileID: 5764143680789025816}
+  - component: {fileID: 5854449245941076629}
+  m_Layer: 9
   m_Name: JoystickTriangle
-  m_TagString: Untagged
+  m_TagString: Hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,42 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5764143680789025817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5764143680789025818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowColor: {r: 0.9669211, g: 1, b: 0, a: 1}
-  glowBrightness: 1.1
-  outlineWidth: 1
-  alphaThreshold: 0.865
-  drawOutside: 0
-  enableInstancing: 0
---- !u!114 &5764143680789025816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5764143680789025818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d40b1ac010554080ab98a5b82731baa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 200
-  power: 5
-  bullet: {fileID: 7834300457617155682, guid: b343a7dbdd399425ca03d8b2b204c421, type: 3}
-  shotPoint: {fileID: 8520605805981779855}
-  timeBtwShots: 1
-  startTimeBtwShots: 0.3
 --- !u!60 &2705497171335970275
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -172,7 +137,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8386852226148938436
+--- !u!114 &5764143680789025817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5764143680789025818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.9669211, g: 1, b: 0, a: 1}
+  glowBrightness: 1.1
+  outlineWidth: 1
+  alphaThreshold: 0.865
+  drawOutside: 0
+  enableInstancing: 0
+--- !u!114 &6444432432118438809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5764143680789025818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11f510e5f8564e89ba2d47abc092be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroEffect: {fileID: 2640452378783224784, guid: 4a57009aa69a6401d98599a98480b197,
+    type: 3}
+  health: 3
+  team: 1
+--- !u!114 &5764143680789025816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5764143680789025818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d40b1ac010554080ab98a5b82731baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 15
+  power: 2
+  bullet: {fileID: 8683264044667435010, guid: 085145741797e4a72ba0f40fd202a3b9, type: 3}
+  shotPoint: {fileID: 8520605805981779855}
+  timeBtwShots: 0.3
+  startTimeBtwShots: 0.3
+  nicknameLabel: {fileID: 3459933688611272278, guid: 9de085a5a6efb4bfd99e9ed0ad1df7cd,
+    type: 3}
+  nickName: test3
+--- !u!114 &5854449245941076629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,12 +204,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41281248e54324fc980a93b5d3997897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 200
-  power: 5
-  bullet: {fileID: 0}
-  shotPoint: {fileID: 0}
-  timeBtwShots: 0
-  startTimeBtwShots: 0
+  maxSpeed: 15
+  power: 2
+  bullet: {fileID: 8683264044667435010, guid: 085145741797e4a72ba0f40fd202a3b9, type: 3}
+  shotPoint: {fileID: 8520605805981779855}
+  timeBtwShots: 0.3
+  startTimeBtwShots: 0.3
+  nicknameLabel: {fileID: 3459933688611272278, guid: 9de085a5a6efb4bfd99e9ed0ad1df7cd,
+    type: 3}
+  nickName: 
 --- !u!1 &8520605805981779848
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8520605805981779855}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}

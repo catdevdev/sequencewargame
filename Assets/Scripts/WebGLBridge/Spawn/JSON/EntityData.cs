@@ -9,7 +9,7 @@ public class EntityData
    public string id;
    public string entityName;
    public string nickName;
-   public string team;
+   public int team;
    public string color;
 }
 
